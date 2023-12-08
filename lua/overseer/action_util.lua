@@ -8,6 +8,7 @@ local M = {}
 ---@param task overseer.Task
 ---@param name? string
 M.run_task_action = function(task, name)
+  print("run task action " .. name)
   M.run_action({
     actions = config.actions,
     name = name,
