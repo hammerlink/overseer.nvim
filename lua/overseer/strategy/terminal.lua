@@ -100,6 +100,7 @@ function TerminalStrategy:stop()
 end
 
 function TerminalStrategy:dispose()
+  print("terminal dispose called")
   self:stop()
   util.soft_delete_buf(self.bufnr)
 end
