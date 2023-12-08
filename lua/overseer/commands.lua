@@ -350,7 +350,6 @@ end
 
 ---@param name? string Name of action to run
 M.quick_action = function(name)
-  print("quick action " .. name)
   if vim.bo.filetype == "OverseerList" then
     local sb = sidebar.get_or_create()
     sb:run_action(name)
