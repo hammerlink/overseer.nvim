@@ -158,7 +158,7 @@ require("overseer").setup({
     bindings = {
       i = {
         ["<C-s>"] = "Submit",
-        ["<C-c>"] = "Cancel",
+        -- ["<C-c>"] = "Cancel",
       },
       n = {
         ["<CR>"] = "Submit",
@@ -177,7 +177,7 @@ require("overseer").setup({
         ["<C-s>"] = "Submit",
         ["<Tab>"] = "Next",
         ["<S-Tab>"] = "Prev",
-        ["<C-c>"] = "Cancel",
+        -- ["<C-c>"] = "Cancel",
       },
       n = {
         ["<CR>"] = "NextOrSubmit",

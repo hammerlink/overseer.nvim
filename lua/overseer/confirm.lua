@@ -62,7 +62,7 @@ return function(opts, callback)
       choose(i)
     end, { buffer = bufnr })
   end
-  vim.keymap.set("n", "<C-c>", cancel, { buffer = bufnr })
+  -- vim.keymap.set("n", "<C-c>", cancel, { buffer = bufnr })
   vim.keymap.set("n", "<Esc>", cancel, { buffer = bufnr })
 
   local lines = vim.split(opts.message, "\n")

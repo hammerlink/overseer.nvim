@@ -106,7 +106,7 @@ M.show_bindings = function(prefix)
     end
   end
   vim.keymap.set("n", "q", "<cmd>close<CR>", { buffer = bufnr })
-  vim.keymap.set("n", "<c-c>", "<cmd>close<CR>", { buffer = bufnr })
+  -- vim.keymap.set("n", "<c-c>", "<cmd>close<CR>", { buffer = bufnr })
   vim.api.nvim_buf_set_option(bufnr, "modifiable", false)
   vim.api.nvim_buf_set_option(bufnr, "bufhidden", "wipe")
 
